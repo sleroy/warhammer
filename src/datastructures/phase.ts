@@ -1,4 +1,4 @@
-import Unit from './unit';
+import Unit from './alive/unit';
 
 export default interface Phase {
     name: string;
