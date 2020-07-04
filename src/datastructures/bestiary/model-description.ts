@@ -1,26 +1,31 @@
-import Wargear from "./wargear";
+import Wargear from './wargear';
 
-export default class ModelDescription {
-    constructor(
-        public name: string,
-        public description: string,
-        public power: number,
-        public profile: Profile,
-        public wargear: Wargear,
-    ) {}
+export default interface ModelDescription {
+    name: string;
+    sprite: string;
+    radius: number;
+    description: string;
+    profile: Profile;
+    wargear: string[]; // Array of string
+    abilities: string[];
+    wargear_options: WargearOption[];
 }
 
-export class Profile {
-    constructor(
-        public M: number,
-        public WS: number,
-        public BS: number,
-        public S: number,
-        public T: number,
-        public W: number,
-        public I: number,
-        public A: number,
-        public Ld: number,
-        public Sv: number,
-    ) {}
+export interface WargearOption {
+    from_wargear: string[];
+    to_wargear: string[];
+    max?: number;
+}
+
+export interface Profile {
+    M: number;
+    WS: number;
+    BS: number;
+    S: number;
+    T: number;
+    W: number;
+    I: number;
+    A: number;
+    Ld: number;
+    Sv: number;
 }

@@ -1,6 +1,6 @@
 import { PhaseAction, PhaseActionItem } from '../../../../datastructures/phase';
-import Unit from '../../../../datastructures/unit';
-import PhaseActionItemImpl from '../../../../datastructures/impl/phase-action-item-impl';
+import Unit from '../../../../datastructures/alive/unit';
+import PhaseActionItemImpl from '../../../../datastructures/phase-action-item-impl';
 
 export default class Wh40kStandardMoveAction implements PhaseAction {
     public name = 'Standard move';

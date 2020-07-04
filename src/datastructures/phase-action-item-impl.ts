@@ -1,5 +1,5 @@
-import { PhaseActionItem } from '../phase';
-import Unit from '../unit';
+import { PhaseActionItem } from './phase';
+import Unit from './alive/unit';
 
 export default class PhaseActionItemImpl implements PhaseActionItem {
     target: Unit[] = [];
