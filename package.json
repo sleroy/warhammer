@@ -43,7 +43,7 @@
     "mustache-loader": "^1.4.3",
     "npm": "^6.14.5",
     "phaser": "^3.23.0",
-    "prettier": "^2.0.5",
+    "prettier": "^2.1.2",
     "query-string": "^6.12.1"
   }
 }
