@@ -33,7 +33,7 @@
     "@typescript-eslint/eslint-plugin": "^3.0.1",
     "@typescript-eslint/parser": "^3.0.1",
     "browser-hash-router": "^1.0.5",
-    "dat.gui": "^0.7.7",
+    "dat.gui": "^0.7.8",
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
