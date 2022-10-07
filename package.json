@@ -8,7 +8,9 @@
     "lint": "eslint 'src/**/*.{js,ts}' --quiet --fix",
     "build": "webpack",
     "watch": "tsc -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": "https://github.com/sleroy/warhammer.git",
   "author": "Sylvain Leroy <sleroy0@gmail.com>",
@@ -33,17 +35,19 @@
     "@typescript-eslint/eslint-plugin": "^3.0.1",
     "@typescript-eslint/parser": "^3.0.1",
     "browser-hash-router": "^1.0.5",
-    "dat.gui": "^0.7.7",
+    "dat.gui": "^0.7.8",
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
     "install": "^0.13.0",
-    "jquery": "^2.2.4",
+    "jquery": "^3.5.0",
     "mustache": "^4.0.1",
     "mustache-loader": "^1.4.3",
-    "npm": "^6.14.5",
+    "npm": "^7.21.0",
     "phaser": "^3.23.0",
     "prettier": "^2.0.5",
-    "query-string": "^6.12.1"
-  }
+    "query-string": "^6.12.1",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
